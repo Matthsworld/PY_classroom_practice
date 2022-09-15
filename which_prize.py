@@ -24,20 +24,20 @@ n_pr = range(51, 150)
 w_t_m = range(151, 180)
 peng = range(181, 200)
 
-if points in w_rab:
+if points in w_rab or points == 50:
     result = "Congratulations! You won a wooden rabbit!"
     print(result)
-elif points in n_pr:
+elif points in n_pr or points == 150:
     result = "Oh dear, no prize this time."
     print(result)
-elif points in w_t_m:
+elif points in w_t_m or points == 180:
     result = "Congratulations! You won a wafer-thin mint!"
     print(result)
-elif points in peng:
+elif points in peng or points == 200:
     result = "Congratulations! You won a penguin!"
     print(result)
 else:
-    result = "Unrecognised"
+    result = "INVALID POINTS"
     print(result)
 
 
